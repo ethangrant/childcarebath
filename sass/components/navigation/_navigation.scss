@@ -2,9 +2,21 @@
 	display: block;
 	width: auto;
 	float: right;
+	margin: 1em 2em 1em 2em;
 
 	.menu-toggle {
 		color: $childcarebath_purple;
+
+		&:before {
+			content: "";
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			margin: 0 0.5em 0 0;
+		}
 	}
 
 	> div {
@@ -16,6 +28,7 @@
 		width: 80%;
 		padding: 2.5em 1.75em;
 		transition: all 0.5s ease;
+		z-index: 10;
 	}
 
 	li {

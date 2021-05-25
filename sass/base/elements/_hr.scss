@@ -3,4 +3,14 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
+
+	&.bar {
+		background-color: $childcarebath_purple;
+		margin: 0;
+		height: 30px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+	}
 }

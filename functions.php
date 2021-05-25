@@ -143,8 +143,13 @@ add_action( 'widgets_init', 'childcarebath_widgets_init' );
 function childcarebath_scripts() {
 	wp_enqueue_style( 'childcarebath-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'childcarebath-style', 'rtl', 'replace' );
+    wp_enqueue_style( 'glidecore', get_template_directory_uri() . '/libs/glidejs/css/glide.core.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'glidetheme', get_template_directory_uri() . '/libs/glidejs/css/glide.theme.min.css', array(), _S_VERSION );
 
-	wp_enqueue_script( 'childcarebath-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+    wp_enqueue_script( 'childcarebath-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'glidejs', get_template_directory_uri() . '/libs/glidejs/js/glide.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bannerjs', get_template_directory_uri() . '/js/banner.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

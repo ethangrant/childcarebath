@@ -18,8 +18,13 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
-	<?php wp_head(); ?>
+
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -48,4 +53,6 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+        <hr class="bar">
 	</header><!-- #masthead -->

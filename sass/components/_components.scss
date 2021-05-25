@@ -4,12 +4,18 @@
 @import "header/logo";
 @import "header/site-branding";
 
+/* Galleries
+--------------------------------------------- */
+@import "footer/footer";
+
 /* Navigation
 --------------------------------------------- */
 @import "navigation/navigation";
 
 /* Posts and pages
 --------------------------------------------- */
+@import "content/banner";
+@import "content/slider";
 @import "content/posts-and-pages";
 
 /* Comments

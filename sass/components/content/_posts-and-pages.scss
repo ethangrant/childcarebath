@@ -2,11 +2,6 @@
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
 	display: none;
 }
@@ -20,4 +15,17 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-header {
+	display: none;
+}
+
+.entry-title {
+	margin-top: 0;
+	text-align: center;
+}
+
+.entry-content {
+	margin-top: 0;
 }

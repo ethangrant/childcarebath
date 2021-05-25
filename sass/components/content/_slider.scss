@@ -1,0 +1,31 @@
+.tns-outer {
+    position: relative;
+
+    .tns-controls {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        button {
+            border: none;
+            height: 32px;
+            width: 32px;
+            text-indent: -9999px;
+            position: relative;
+        }
+
+        button[data-controls=prev] {
+            background: url(images/controls.png) no-repeat 0 -32px;
+            left: 10px;
+        }
+
+        button[data-controls=next] {
+            background: url(images/controls.png) no-repeat -43px -32px;
+            float: right;
+            right: 10px;
+        }
+    }
+}
