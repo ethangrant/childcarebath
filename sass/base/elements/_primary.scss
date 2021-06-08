@@ -2,4 +2,18 @@
     margin: 0;
     padding: 0 20px;
     background-color: $color__background-primary;
+
+    @media screen and (min-width: 767px) {
+        background-color: $childcarebath_purple;
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 0 40px;
+    }
+}
+
+#page {
+    @media screen and (min-width: 767px) {
+        background-color: $childcarebath_purple;
+    }
 }

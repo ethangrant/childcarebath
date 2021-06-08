@@ -1,0 +1,39 @@
+body.riverside {
+    hr {
+        &.bar {
+            background-color: $childcarebath_blue;
+        }
+    }
+
+    #page > footer {
+        border-bottom: 50px solid $childcarebath_blue;
+
+        .footer-contact {
+            p {
+                color: $childcarebath_blue;
+            }
+
+            a {
+                color: $childcarebath_blue;
+            }
+        }
+    }
+
+    .main-navigation {
+        .menu-toggle {
+            color: $childcarebath_blue;
+        }
+
+        > div {
+            @media screen and (min-width: 767px) {
+                background: $childcarebath_blue;
+            }
+        }
+    }
+
+    #page {
+        @media screen and (min-width: 767px) {
+            background-color: $childcarebath_blue;
+        }
+    }
+}

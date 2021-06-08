@@ -4,4 +4,8 @@ header {
 
 .site-header {
     position: relative;
+
+    @media screen and (min-width: 767px) {
+        text-align: center;
+    }
 }

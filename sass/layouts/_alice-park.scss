@@ -1,0 +1,39 @@
+body.alicepark {
+    hr {
+        &.bar {
+            background-color: $childcarebath_pink;
+        }
+    }
+
+    #page > footer {
+        border-bottom: 50px solid $childcarebath_pink;
+
+        .footer-contact {
+            p {
+                color: $childcarebath_pink;
+            }
+
+            a {
+                color: $childcarebath_pink;
+            }
+        }
+    }
+
+    .main-navigation {
+        .menu-toggle {
+            color: $childcarebath_pink;
+        }
+
+        > div {
+            @media screen and (min-width: 767px) {
+                background: $childcarebath_pink;
+            }
+        }
+    }
+
+    #page {
+        @media screen and (min-width: 767px) {
+            background-color: $childcarebath_pink;
+        }
+    }
+}

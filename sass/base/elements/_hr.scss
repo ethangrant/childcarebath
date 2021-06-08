@@ -12,5 +12,10 @@ hr {
 		bottom: 0;
 		width: 100%;
 		z-index: 1;
+
+		@media screen and (min-width: 767px) {
+			bottom: 37px;
+			height: 36px;
+		}
 	}
 }

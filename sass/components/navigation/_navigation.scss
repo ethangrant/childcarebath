@@ -1,8 +1,21 @@
+#primary-menu {
+	@media screen and (min-width: 767px) {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}
+
 .main-navigation {
 	display: block;
 	width: auto;
 	float: right;
 	margin: 1em 2em 1em 2em;
+
+	@media screen and (min-width: 767px) {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
 
 	.menu-toggle {
 		color: $childcarebath_purple;
@@ -29,11 +42,23 @@
 		padding: 2.5em 1.75em;
 		transition: all 0.5s ease;
 		z-index: 10;
+
+		@media screen and (min-width: 767px) {
+			position: static;
+			background: $childcarebath_purple;
+			width: 100%;
+			padding: 3.5px 14.5px 14.5px 14.5px;
+		}
 	}
 
 	li {
 		line-height: 3.5em;
 		border-top: solid 1px rgba(255, 255, 255, 0.25);
+
+		@media screen and (min-width: 767px) {
+			border: 0;
+			line-height: normal;
+		}
 	}
 
 	&.toggled {
@@ -109,14 +134,14 @@
 	}
 }
 
-@media screen and (min-width: 37.5em) {
-
+@media screen and (min-width: 767px) {
 	.menu-toggle {
 		display: none;
 	}
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: space-evenly;
 	}
 }
 

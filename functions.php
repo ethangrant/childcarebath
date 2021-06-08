@@ -105,6 +105,42 @@ if ( ! function_exists( 'childcarebath_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'childcarebath_setup' );
 
+add_filter('body_class', 'custom_body_class');
+function custom_body_class($classes) {
+
+    $classes[] = basename(str_replace('.html', '', get_permalink()));
+
+    return $classes;
+}
+
+function get_attachment_url_by_slug( $slug ) {
+    $args = array(
+        'post_type' => 'attachment',
+        'name' => sanitize_title($slug),
+        'posts_per_page' => 1,
+        'post_status' => 'inherit',
+    );
+    $_header = get_posts( $args );
+    $header = $_header ? array_pop($_header) : null;
+    return $header ? wp_get_attachment_url($header->ID) : '';
+}
+
+function change_logo_for_page($html) {
+    $pagename = str_replace('.html', '', basename(get_permalink()));
+
+    if ($pagename === 'alicepark' || $pagename === 'riverside') {
+        $html = preg_replace(
+            '/<img(.*?)\/>/',
+            '<img src="'. get_attachment_url_by_slug("childcarebath_{$pagename}") .'" class="custom-logo" alt="" itemprop="logo" />',
+            $html
+        );
+    }
+
+    return $html;
+}
+
+add_filter('get_custom_logo','change_logo_for_page');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

@@ -2,10 +2,20 @@
     padding: 20px;
     border-bottom: 50px solid $childcarebath_purple;
 
+    @media screen and (min-width: 767px) {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+    }
+
     .footer-contact {
         p {
             margin: 0;
             font-size: 11px;
+            color: $childcarebath_purple;
+        }
+
+        a {
             color: $childcarebath_purple;
         }
     }

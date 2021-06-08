@@ -1,0 +1,24 @@
+.eicon-chevron-right, .eicon-chevron-left {
+    background-color: #706f6b;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    opacity: 0.9;
+    position: relative;
+}
+
+.eicon-chevron-right {
+    &:before {
+        position: absolute;
+        left: 7px;
+        top: 5px;
+    }
+}
+
+.eicon-chevron-left {
+    &:before {
+        position: absolute;
+        right: 7px;
+        top: 5px;
+    }
+}

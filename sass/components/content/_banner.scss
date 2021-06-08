@@ -2,3 +2,23 @@
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
 }
+
+.elementor-134 {
+
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 100%;
+    }
+
+    .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+        padding: 0;
+    }
+
+    .elementor-image-carousel-wrapper {
+        max-height: 550px;
+        overflow: hidden;
+    }
+
+    .swiper-slide-image {
+        margin-top: calc((100% - 300px) * -0.18);
+    }
+}

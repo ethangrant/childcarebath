@@ -1,7 +1,9 @@
 .site-logo {
-    //text-align: center;
-
     img {
         max-width: 160px;
+
+        @media screen and (min-width: 767px) {
+            max-width: 200px;
+        }
     }
 }
