@@ -542,7 +542,7 @@ table {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #FFFFFF;
-    padding: 0 40px;
+    padding: 40px 40px 0 40px;
   }
 }
 
@@ -794,7 +794,7 @@ header {
 /* Navigation
 --------------------------------------------- */
 @media screen and (min-width: 767px) {
-  #primary-menu {
+  #primary-menu .nav-menu {
     max-width: 900px;
     margin: 0 auto;
   }
