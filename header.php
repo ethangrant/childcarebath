@@ -59,3 +59,4 @@
 	</header><!-- #masthead -->
 
     <?php echo do_shortcode("[hfe_template id='134']"); ?>
+    <?php echo do_shortcode("[hfe_template id='61']"); ?>
