@@ -1,4 +1,4 @@
-body.riverside {
+body[class^="riverside-"], body[class*=" riverside-"] {
     hr {
         &.bar {
             background-color: $childcarebath_blue;

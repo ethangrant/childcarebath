@@ -34,3 +34,10 @@
 		padding-top: 30px;
 	}
 }
+
+.elementor-widget-container {
+	> ul {
+		padding: 0;
+		margin-left: 1.5em;
+	}
+}

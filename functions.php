@@ -128,10 +128,18 @@ function get_attachment_url_by_slug( $slug ) {
 function change_logo_for_page($html) {
     $pagename = str_replace('.html', '', basename(get_permalink()));
 
-    if ($pagename === 'alicepark' || $pagename === 'riverside') {
+    if (strpos($pagename, 'alicepark') !== false) {
         $html = preg_replace(
             '/<img(.*?)\/>/',
-            '<img src="'. get_attachment_url_by_slug("childcarebath_{$pagename}") .'" class="custom-logo" alt="" itemprop="logo" />',
+            '<img src="'. get_attachment_url_by_slug("childcarebath_alicepark") .'" class="custom-logo" alt="" itemprop="logo" />',
+            $html
+        );
+    }
+
+    if (strpos($pagename, 'riverside') !== false) {
+        $html = preg_replace(
+            '/<img(.*?)\/>/',
+            '<img src="'. get_attachment_url_by_slug("childcarebath_riverside") .'" class="custom-logo" alt="" itemprop="logo" />',
             $html
         );
     }

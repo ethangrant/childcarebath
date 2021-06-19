@@ -683,54 +683,54 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-body.alicepark hr.bar {
+body[class^=alicepark-] hr.bar, body[class*=" alicepark-"] hr.bar {
   background-color: #ea118d;
 }
-body.alicepark #page > footer {
+body[class^=alicepark-] #page > footer, body[class*=" alicepark-"] #page > footer {
   border-bottom: 50px solid #ea118d;
 }
-body.alicepark #page > footer .footer-contact p {
+body[class^=alicepark-] #page > footer .footer-contact p, body[class*=" alicepark-"] #page > footer .footer-contact p {
   color: #ea118d;
 }
-body.alicepark #page > footer .footer-contact a {
+body[class^=alicepark-] #page > footer .footer-contact a, body[class*=" alicepark-"] #page > footer .footer-contact a {
   color: #ea118d;
 }
-body.alicepark .main-navigation .menu-toggle {
+body[class^=alicepark-] .main-navigation .menu-toggle, body[class*=" alicepark-"] .main-navigation .menu-toggle {
   color: #ea118d;
 }
 @media screen and (min-width: 767px) {
-  body.alicepark .main-navigation > div {
+  body[class^=alicepark-] .main-navigation > div, body[class*=" alicepark-"] .main-navigation > div {
     background: #ea118d;
   }
 }
 @media screen and (min-width: 767px) {
-  body.alicepark #page {
+  body[class^=alicepark-] #page, body[class*=" alicepark-"] #page {
     background-color: #ea118d;
   }
 }
 
-body.riverside hr.bar {
+body[class^=riverside-] hr.bar, body[class*=" riverside-"] hr.bar {
   background-color: #00aeef;
 }
-body.riverside #page > footer {
+body[class^=riverside-] #page > footer, body[class*=" riverside-"] #page > footer {
   border-bottom: 50px solid #00aeef;
 }
-body.riverside #page > footer .footer-contact p {
+body[class^=riverside-] #page > footer .footer-contact p, body[class*=" riverside-"] #page > footer .footer-contact p {
   color: #00aeef;
 }
-body.riverside #page > footer .footer-contact a {
+body[class^=riverside-] #page > footer .footer-contact a, body[class*=" riverside-"] #page > footer .footer-contact a {
   color: #00aeef;
 }
-body.riverside .main-navigation .menu-toggle {
+body[class^=riverside-] .main-navigation .menu-toggle, body[class*=" riverside-"] .main-navigation .menu-toggle {
   color: #00aeef;
 }
 @media screen and (min-width: 767px) {
-  body.riverside .main-navigation > div {
+  body[class^=riverside-] .main-navigation > div, body[class*=" riverside-"] .main-navigation > div {
     background: #00aeef;
   }
 }
 @media screen and (min-width: 767px) {
-  body.riverside #page {
+  body[class^=riverside-] #page, body[class*=" riverside-"] #page {
     background-color: #00aeef;
   }
 }
@@ -794,7 +794,7 @@ header {
 /* Navigation
 --------------------------------------------- */
 @media screen and (min-width: 767px) {
-  #primary-menu .nav-menu {
+  #primary-menu {
     max-width: 900px;
     margin: 0 auto;
   }
@@ -1009,6 +1009,11 @@ header {
 .entry-content > h1 {
   margin-top: 0;
   padding-top: 30px;
+}
+
+.elementor-widget-container > ul {
+  padding: 0;
+  margin-left: 1.5em;
 }
 
 /* Comments
