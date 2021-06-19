@@ -1,3 +1,11 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 }
+
+.custom-links a:first-of-type {
+	color: $childcarebath_pink;
+}
+
+.custom-links a:last-of-type {
+	color: $childcarebath_blue;
+}

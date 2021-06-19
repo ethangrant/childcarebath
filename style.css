@@ -461,6 +461,14 @@ body {
   background: #ffffff;
 }
 
+.custom-links a:first-of-type {
+  color: #ea118d;
+}
+
+.custom-links a:last-of-type {
+  color: #00aeef;
+}
+
 hr {
   background-color: #ccc;
   border: 0;
@@ -683,54 +691,54 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-body[class^=alicepark-] hr.bar, body[class*=" alicepark-"] hr.bar {
+body.alicepark hr.bar, body[class^=alicepark-] hr.bar, body[class*=" alicepark-"] hr.bar {
   background-color: #ea118d;
 }
-body[class^=alicepark-] #page > footer, body[class*=" alicepark-"] #page > footer {
+body.alicepark #page > footer, body[class^=alicepark-] #page > footer, body[class*=" alicepark-"] #page > footer {
   border-bottom: 50px solid #ea118d;
 }
-body[class^=alicepark-] #page > footer .footer-contact p, body[class*=" alicepark-"] #page > footer .footer-contact p {
+body.alicepark #page > footer .footer-contact p, body[class^=alicepark-] #page > footer .footer-contact p, body[class*=" alicepark-"] #page > footer .footer-contact p {
   color: #ea118d;
 }
-body[class^=alicepark-] #page > footer .footer-contact a, body[class*=" alicepark-"] #page > footer .footer-contact a {
+body.alicepark #page > footer .footer-contact a, body[class^=alicepark-] #page > footer .footer-contact a, body[class*=" alicepark-"] #page > footer .footer-contact a {
   color: #ea118d;
 }
-body[class^=alicepark-] .main-navigation .menu-toggle, body[class*=" alicepark-"] .main-navigation .menu-toggle {
+body.alicepark .main-navigation .menu-toggle, body[class^=alicepark-] .main-navigation .menu-toggle, body[class*=" alicepark-"] .main-navigation .menu-toggle {
   color: #ea118d;
 }
 @media screen and (min-width: 767px) {
-  body[class^=alicepark-] .main-navigation > div, body[class*=" alicepark-"] .main-navigation > div {
+  body.alicepark .main-navigation > div, body[class^=alicepark-] .main-navigation > div, body[class*=" alicepark-"] .main-navigation > div {
     background: #ea118d;
   }
 }
 @media screen and (min-width: 767px) {
-  body[class^=alicepark-] #page, body[class*=" alicepark-"] #page {
+  body.alicepark #page, body[class^=alicepark-] #page, body[class*=" alicepark-"] #page {
     background-color: #ea118d;
   }
 }
 
-body[class^=riverside-] hr.bar, body[class*=" riverside-"] hr.bar {
+body.riverside hr.bar, body[class^=riverside-] hr.bar, body[class*=" riverside-"] hr.bar {
   background-color: #00aeef;
 }
-body[class^=riverside-] #page > footer, body[class*=" riverside-"] #page > footer {
+body.riverside #page > footer, body[class^=riverside-] #page > footer, body[class*=" riverside-"] #page > footer {
   border-bottom: 50px solid #00aeef;
 }
-body[class^=riverside-] #page > footer .footer-contact p, body[class*=" riverside-"] #page > footer .footer-contact p {
+body.riverside #page > footer .footer-contact p, body[class^=riverside-] #page > footer .footer-contact p, body[class*=" riverside-"] #page > footer .footer-contact p {
   color: #00aeef;
 }
-body[class^=riverside-] #page > footer .footer-contact a, body[class*=" riverside-"] #page > footer .footer-contact a {
+body.riverside #page > footer .footer-contact a, body[class^=riverside-] #page > footer .footer-contact a, body[class*=" riverside-"] #page > footer .footer-contact a {
   color: #00aeef;
 }
-body[class^=riverside-] .main-navigation .menu-toggle, body[class*=" riverside-"] .main-navigation .menu-toggle {
+body.riverside .main-navigation .menu-toggle, body[class^=riverside-] .main-navigation .menu-toggle, body[class*=" riverside-"] .main-navigation .menu-toggle {
   color: #00aeef;
 }
 @media screen and (min-width: 767px) {
-  body[class^=riverside-] .main-navigation > div, body[class*=" riverside-"] .main-navigation > div {
+  body.riverside .main-navigation > div, body[class^=riverside-] .main-navigation > div, body[class*=" riverside-"] .main-navigation > div {
     background: #00aeef;
   }
 }
 @media screen and (min-width: 767px) {
-  body[class^=riverside-] #page, body[class*=" riverside-"] #page {
+  body.riverside #page, body[class^=riverside-] #page, body[class*=" riverside-"] #page {
     background-color: #00aeef;
   }
 }
@@ -798,6 +806,10 @@ header {
     max-width: 900px;
     margin: 0 auto;
   }
+}
+
+.current_page_item a {
+  text-decoration: underline;
 }
 
 .main-navigation {
@@ -1202,6 +1214,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
