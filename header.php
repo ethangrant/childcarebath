@@ -24,6 +24,21 @@
     <script src="https://kit.fontawesome.com/2f927039b0.js" crossorigin="anonymous"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
+    <?php
+        $themeColour = '#7c74b5';
+        $pagename = str_replace('.html', '', basename(get_permalink()));
+
+        if (strpos($pagename, 'alicepark') !== false) {
+            $themeColour = '#ea118d';
+        }
+
+        if (strpos($pagename, 'riverside') !== false) {
+            $themeColour = '#00aeef';
+        }
+    ?>
+
+
+    <meta name="theme-color" content="<?php echo $themeColour ?>" />
 
     <?php wp_head(); ?>
 </head>

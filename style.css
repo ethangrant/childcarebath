@@ -1027,6 +1027,13 @@ header {
   padding: 0;
   margin-left: 1.5em;
 }
+.elementor-widget-container > ul li {
+  margin-bottom: 20px;
+}
+
+.navigation.post-navigation {
+  display: none;
+}
 
 /* Comments
 --------------------------------------------- */
