@@ -959,6 +959,10 @@ header {
   margin-top: calc((100% - 300px) * -0.18);
 }
 
+.swiper-slide-image {
+  aspect-ratio: 275/183;
+}
+
 .tns-outer {
   position: relative;
 }

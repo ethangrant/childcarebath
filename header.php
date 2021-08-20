@@ -16,12 +16,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://kit.fontawesome.com/2f927039b0.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="https://kit.fontawesome.com/2f927039b0.js" crossorigin="anonymous"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
     <?php
@@ -73,5 +74,5 @@
         <hr class="bar">
 	</header><!-- #masthead -->
 
-    <?php echo do_shortcode("[hfe_template id='134']"); ?>
+    <?php //echo do_shortcode("[hfe_template id='134']"); ?>
     <?php echo do_shortcode("[hfe_template id='61']"); ?>
